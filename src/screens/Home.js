@@ -12,7 +12,7 @@ const Home = ({ navigation }) => {
 
     // useEffect se ejecuta cuando el componente se monta
     useEffect(() => {
-        // Define una consulta a la coleccion 'productos' en Firestore, ordenada por el campo 'creado' en orden descendente
+        // Define una consulta a la coleccio n 'productos' en Firestore, ordenada por el campo 'creado' en orden descendente
         const q = query(collection(database, 'productos'), orderBy('creado', 'desc'));
         
         // Escucha cambios en la consulta de Firestore en tiempo real
